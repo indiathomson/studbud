@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    
+ 
+     
+   
+   
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width = device-width">
+    <title> repl.it</title>
+    <link href="ac2b17b88ef0ab3e3e3316d5a6be3892" rel="stylesheet" type="text/css">
+    <link href="1709979ce1a746dbac218773e80dac19" rel="stylesheet" type="text/css">
+</head>
+<div class="grid-container">
+    <div class="header">
+        <h1>Studbud. Your name.</h1>
+        
+    </div>
+    <div class="nav">
+        <div class="sidebar">
+            <a class="active" href="#tasklist">Task List</a>
+            <a href="#timer">Pomodoro Timer</a>
+            <a href="#kanban">Kanban Board</a>
+            <a href="#music">Music</a>
+            <a href="#dictionary">Dictionary</a>
+          </div>
+      </div>
+  <div class="task-list">
+    <div class="taskBox">
+            <h2>Task List:</h2>
+            <div class="inputField">
+                <input type="text" placeholder="your task...">
+                <button type="button">+</button>
+            </div>
+            <ul class="myTaskList">
+                <li>Finish design project.<button type="button">x</button></li>
+            </ul>
+            <div class="footer">
+                <span>Your have one remaining task.</span>
+                <button type="button">Clear all.</button>
+            </div>
+        </div>
+  </div>
+  <div class="timer">
+    <div class="stopwatch">
+            <h2><span class="clock">Stopwatch</span></h2>
+            <div class="circle">
+                <span class="time" id="display">00:00:00</span>
+            </div>
+        </div>
+        
+
+        <div class="container">
+            <div class="row justify-content-center mt-5 mb-2">
+              <h2>Your own timer!</h2>
+            </div>
+            <div class="row justify-content-center border rounded-pill" id="countdown">
+        
+            </div>
+            <div class="row justify-content-center mt-2">
+             
+        
+            </div>
+        </div>
+
+</div>
+<div class="kanban-board">
+    <h2>Kanban Board</h2>
+
+     <div class="row">
+       
+         <div class="column" style="5850ed980ca0926a3f3ea51b43ba302d">
+             <h2>Column 1</h2>
+         </div>
+         <div class="column" style="21391524dbd829c0f46f6a595de22a80">
+             <h2>Column 2</h2>
+         </div>
+         <div class="column" style="6efbf32eb5f484b420e62cf79c66d85c">
+             <h2>Column 3</h2>
+ 
+         </div>
+       </div>
+
+</div>
+<div class="music-library">
+ <h1>Music Library</h1>
+</div>
+<div class="dictionary">
+ <h1>Dictionary</h1>
+</div>
+<script src="755055f9a7647ed3f9f329c2c5662177"></script>
+
+</div></html>
+
+

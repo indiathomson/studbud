@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>  
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width = device-width">
+    <title> repl.it</title>
+    <!---<link href="scss/main.scss" rel="stylesheet" type="text/css">--->
+    <link href="/index.HASH_REF_8ea3821fab3b7b4eea17a03021fc8037.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+<div class="grid-container">
+    <div class="header">
+        <h1>Studbud.</h1>
+        
+    </div>
+    <div class="nav">
+        <div class="sidebar">
+            <a class="active" href="#tasklist">Task List</a>
+            <a href="#timer">Pomodoro Timer</a>
+            <a href="#kanban">Kanban Board</a>
+            <a href="#music">Music</a>
+            <a href="#dictionary">Dictionary</a>
+          </div>
+      </div>
+
+
+  <div class="task-list" id="tasklist">
+
+      
+    
+    <div class="taskBox"> 
+          <h2>Add another task...</h2> 
+       
+          <br>
+    <form id="taskform">
+        <label for="task">Task:</label>
+        <input type="text" name="task" id="taskInput">
+
+        <br>
+  
+        <!----Date Input-->
+      <label for="dueDate">Due date:</label>
+      <input type="date" name="dueDate" id="dueDateInput">
+
+      <br>
+
+        <!---Deadline Input-->
+      <label for="taskDeadline">Task Deadline: </label>
+      <input type="time" name="taskDeadline" id="taskDeadlineInput">
+
+      <br>
+
+        <!---Completion Input-->
+
+        <label for="estimatedCompletionTime">Estimated Completion Time (mins): </label>
+       <input type="text" name="estimatedCompletionTime" id="estimatedCompletionTimeInput">
+
+       <br>
+
+       <!-----Priority Rating-->
+
+       <label name="priorityRating">Task Priority: </label>
+       <select name="priorityRating" id="priorityRatingInput">
+        <option value="selectOne">select one</option>
+           <option value="Low">Low</option>
+           <option value="Medium">Medium</option>
+           <option value="High">High</option>
+       </select>
+  
+       <br>
+        <button type="submit">Submit</button>
+      </form>
+
+      <div id="taskList">
+        <h1>Your tasks:</h1>
+        <p id="emptyList">You have not added any tasks.</p>
+        <ul></ul>
+      </div>
+    
+  </div>
+
+
+  <div class="active" id="timer">
+      <h1> Pomodoro Timer</h1>
+    <div class="stopwatch">
+        
+        </div>
+
+</div>
+
+<div class="kanban-board" id="kanban">
+    <h1>Covey Quadrants</h1>
+
+    <div class="grid-container-covey-quadrents">
+        <div class="important">
+            <h3 class="transformh3">Important:</h3>
+
+        </div>
+        <div class="notImportant">
+            <h3 class="transformh3">Not Important:</h3>
+        </div>
+        <div class="urgent">
+            <h3>Urgent:</h3>
+
+        </div>
+        <div class="notUrgent">
+            <h3>Not Urgent:</h3>
+
+        </div>
+        <div class="importantUrgent">
+
+        </div>
+        <div class="importantNotUrgent">
+
+        </div>
+        <div class="notImportantUrgent">
+
+        </div>
+        <div class="notImportantNotUrgent">
+
+        </div>
+      </div>
+    </div>
+
+<div class="music-library" id="music">
+ <h1>Music Library</h1>
+
+ <figure>
+    <figcaption>LowFi Hip Hop Girl:</figcaption>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/lTRiuFIWV54" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</figure>
+</div>
+
+<div class="dictionary" id="dictionary">
+ <h1>Dictionary</h1>
+</div>
+
+<script src="/index.HASH_REF_70dca43e1ee77af44d4d7940a915bf2e.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+</div></div></html>
+
+

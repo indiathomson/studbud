@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>  
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width = device-width">
+    <title> repl.it</title>
+    <!---<link href="scss/main.scss" rel="stylesheet" type="text/css">--->
+    <link href="1709979ce1a746dbac218773e80dac19" rel="stylesheet" type="text/css">
+    <link href="7101a6f10d2c2dc39a95d52cf8329559" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+<div class="grid-container">
+    <div class="header">
+        <h1>Studbud.</h1>
+        
+    </div>
+    <div class="nav">
+        <div class="sidebar">
+            <a class="active" href="#tasklist">Task List</a>
+            <a href="#timer">Pomodoro Timer</a>
+            <a href="#kanban">Kanban Board</a>
+            <a href="#music">Music</a>
+            <a href="#dictionary">Dictionary</a>
+          </div>
+      </div>
+
+
+  <div class="task-list" id="tasklist">
+
+      
+    
+    <div class="taskBox"> 
+          <h2>Add another task...</h2> 
+       
+          <br>
+    <form id="taskform">
+        <label for="task">Task:</label>
+        <input type="text" name="task" id="taskInput">
+
+        <br>
+  
+        <!----Date Input-->
+      <label for="dueDate">Due date:</label>
+      <input type="date" name="dueDate" id="dueDateInput">
+
+      <br>
+
+        <!---Deadline Input-->
+      <label for="taskDeadline">Task Deadline: </label>
+      <input type="time" name="taskDeadline" id="taskDeadlineInput">
+
+      <br>
+
+        <!---Completion Input-->
+
+        <label for="estimatedCompletionTime">Estimated Completion Time (mins): </label>
+       <input type="text" name="estimatedCompletionTime" id="estimatedCompletionTimeInput">
+
+       <br>
+
+       <!-----Priority Rating-->
+
+       <label name="priorityRating">Task Priority: </label>
+       <select name="priorityRating" id="priorityRatingInput">
+        <option value="selectOne">select one</option>
+           <option value="Low">Low</option>
+           <option value="Medium">Medium</option>
+           <option value="High">High</option>
+       </select>
+  
+       <br>
+        <button type="submit">Submit</button>
+      </form>
+
+      <div id="taskList">
+        <h1>Your tasks:</h1>
+        <p id="emptyList">You have not added any tasks.</p>
+        <ul></ul>
+      </div>
+    
+  </div>
+
+
+  <div class="active" id="timer">
+      <h1> Pomodoro Timer</h1>
+    <div class="stopwatch">
+        
+        </div>
+
+</div>
+
+<div class="kanban-board" id="kanban">
+    <h1>Kanban Board</h1>
+
+    <div class="grid-container-covey-quadrents">
+        <div class="important">
+            <h3 class="transformh3">Important:</h3>
+
+        </div>
+        <div class="notImportant">
+            <h3>Not Important:</h3>
+        </div>
+        <div class="urgent">
+            <h3 class="transformh3">Urgent:</h3>
+
+        </div>
+        <div class="notUrgent">
+            <h3 class="transformh3">Not Urgent:</h3>
+
+        </div>
+        <div class="importantUrgent">
+
+        </div>
+        <div class="importantNotUrgent">
+
+        </div>
+        <div class="notImportantUrgent">
+
+        </div>
+        <div class="notImportantNotUrgent">
+
+        </div>
+      </div>
+    </div>
+
+<div class="music-library" id="music">
+ <h1>Music Library</h1>
+
+ <figure>
+    <figcaption>LowFi Hip Hop Girl:</figcaption>
+    <iframe width="560" height="315" src="119d4411144c5cd38416d8585a3e0d08" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</figure>
+</div>
+
+<div class="dictionary" id="dictionary">
+ <h1>Dictionary</h1>
+</div>
+
+<script src="82cbe4f98fdb7db02946300ec6b25e0c"></script>
+<script src="07985f7b483f43f6f99e8f78f7ddcc72" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+</div></div></html>
+
+

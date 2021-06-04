@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    
+ 
+     
+   
+   
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width = device-width">
+    <title> repl.it</title>
+    <link href="ac2b17b88ef0ab3e3e3316d5a6be3892" rel="stylesheet" type="text/css">
+    <link href="1709979ce1a746dbac218773e80dac19" rel="stylesheet" type="text/css">
+</head>
+<div class="grid-container">
+    <div class="header">
+        <h1>Studbud. Your name.</h1>
+        
+    </div>
+    <div class="nav">
+        <div class="sidebar">
+            <a class="active" href="#tasklist">Task List</a>
+            <a href="#timer">Pomodoro Timer</a>
+            <a href="#kanban">Kanban Board</a>
+            <a href="#music">Music</a>
+            <a href="#dictionary">Dictionary</a>
+          </div>
+      </div>
+  <div class="task-list">
+    <div class="taskBox">
+          <h2>Task List</h2>
+    <form id="taskform">
+        <label for="task">Task:</label>
+        <input type="text" name="task" id="taskInput">
+
+        <br>
+  
+        <!----Date Input-->
+      <label for="dueDate">Due date:</label>
+      <input type="date" name="dueDate" id="dueDateInput">
+
+      <br>
+
+        <!---Deadline Input-->
+      <label for="taskDeadline">Task Deadline: </label>
+      <input type="time" name="taskDeadline" id="taskDeadlineInput">
+
+      <br>
+
+       <!---Deadline Input-->
+       <label for="taskDeadline">Task Deadline: </label>
+       <input type="time" name="taskDeadline" id="taskDeadlineInput">
+
+       <br>
+        <!---Completion Input-->
+
+        <label for="estimatedCompletionTime">Estimated Completion Time (mins): </label>
+       <input type="time" name="estimatedCompletionTime" id="estimatedCompletionTimeInput">
+
+       <br>
+
+       <!-----Priority Rating-->
+
+       <label name="priorityRating">Task Priority: </label>
+       <select name="priorityRating" id="priorityRatingInput">
+        <option value="selectOne">select one</option>
+           <option value="Low">Low</option>
+           <option value="Medium">Medium</option>
+           <option value="High">High</option>
+       </select>
+  
+       <br>
+        <button type="submit">Submit</button>
+      </form>
+  
+      <ul id="taskList">
+      </ul>
+        </div>
+  </div>
+  <div class="timer">
+    <div class="stopwatch">
+            <h2><span class="clock">Stopwatch</span></h2>
+            <div class="circle">
+                <span class="time" id="display">00:00:00</span>
+            </div>
+        </div>
+        
+
+        <div class="container">
+            <div class="row justify-content-center mt-5 mb-2">
+              <h2>Your own timer!</h2>
+            </div>
+            <div class="row justify-content-center border rounded-pill" id="countdown">
+        
+            </div>
+            <div class="row justify-content-center mt-2">
+             
+        
+            </div>
+        </div>
+
+</div>
+<div class="kanban-board">
+    <h2>Kanban Board</h2>
+
+     <div class="row">
+       
+         <div class="column" style="a32d9cec7a315dbfbf967cf3d5a21b32">
+             <h2>Column 1</h2>
+         </div>
+         <div class="column" style="a2e98ca01e7ec5dc2b030580bda014ec">
+             <h2>Column 2</h2>
+         </div>
+         <div class="column" style="225450dcb68ff455e879101406d32423">
+             <h2>Column 3</h2>
+ 
+         </div>
+       </div>
+
+</div>
+<div class="music-library">
+ <h1>Music Library</h1>
+</div>
+<div class="dictionary">
+ <h1>Dictionary</h1>
+</div>
+<script src="755055f9a7647ed3f9f329c2c5662177"></script>
+
+</div></html>
+
+

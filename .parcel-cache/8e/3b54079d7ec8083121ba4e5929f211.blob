@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    
+ 
+     
+   
+   
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width = device-width">
+    <title> repl.it</title>
+    <link href="/index.HASH_REF_80038805bd6829e42a01d0f20c72b7db.css" rel="stylesheet" type="text/css">
+    <link href="/index.HASH_REF_8ea3821fab3b7b4eea17a03021fc8037.css" rel="stylesheet" type="text/css">
+</head>
+<div class="grid-container">
+    <div class="header">
+        <h1>Studbud. Your name.</h1>
+        
+    </div>
+    <div class="nav">
+        <div class="sidebar">
+            <a class="active" href="#tasklist">Task List</a>
+            <a href="#timer">Pomodoro Timer</a>
+            <a href="#kanban">Kanban Board</a>
+            <a href="#music">Music</a>
+            <a href="#dictionary">Dictionary</a>
+          </div>
+      </div>
+  <div class="task-list">
+    <div class="taskBox">
+          
+    <form id="taskform">
+        <label for="task">Task:</label>
+        <input type="text" name="task" id="taskInput">
+  
+        <!----Date Input-->
+      <label for="dueDate">Due date:</label>
+      <input type="date" name="dueDate" id="dueDateInput">
+        <!---Time Input-->
+      <label for="completionTime">Completion Time: </label>
+      <input type="time" name="completionTime" id="timeInput">
+    
+        <!---Priority Input-->
+  
+        <button type="submit">Submit</button>
+      </form>
+  
+      <ul id="taskList">
+      </ul>
+        </div>
+  </div>
+  <div class="timer">
+    <div class="stopwatch">
+            <h2><span class="clock">Stopwatch</span></h2>
+            <div class="circle">
+                <span class="time" id="display">00:00:00</span>
+            </div>
+        </div>
+        
+
+        <div class="container">
+            <div class="row justify-content-center mt-5 mb-2">
+              <h2>Your own timer!</h2>
+            </div>
+            <div class="row justify-content-center border rounded-pill" id="countdown">
+        
+            </div>
+            <div class="row justify-content-center mt-2">
+             
+        
+            </div>
+        </div>
+
+</div>
+<div class="kanban-board">
+    <h2>Kanban Board</h2>
+
+     <div class="row">
+       
+         <div class="column" style="background-color: #f55a42;
+">
+             <h2>Column 1</h2>
+         </div>
+         <div class="column" style="background-color:#f5bf42;
+">
+             <h2>Column 2</h2>
+         </div>
+         <div class="column" style="background-color:#a2f092;
+">
+             <h2>Column 3</h2>
+ 
+         </div>
+       </div>
+
+</div>
+<div class="music-library">
+ <h1>Music Library</h1>
+</div>
+<div class="dictionary">
+ <h1>Dictionary</h1>
+</div>
+<script src="/index.HASH_REF_70dca43e1ee77af44d4d7940a915bf2e.js"></script>
+
+</div></html>
+
+

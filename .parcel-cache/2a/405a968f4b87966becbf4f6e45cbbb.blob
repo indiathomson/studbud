@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>  
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width = device-width">
+    <title> repl.it</title>
+    <!---<link href="scss/main.scss" rel="stylesheet" type="text/css">--->
+    <link href="/index.HASH_REF_8ea3821fab3b7b4eea17a03021fc8037.css" rel="stylesheet" type="text/css">
+</head>
+<div class="grid-container">
+    <div class="header">
+        <h1>Studbud.</h1>
+        
+    </div>
+    <div class="nav">
+        <div class="sidebar">
+            <a class="active" href="#tasklist">Task List</a>
+            <a href="#timer">Pomodoro Timer</a>
+            <a href="#kanban">Kanban Board</a>
+            <a href="#music">Music</a>
+            <a href="#dictionary">Dictionary</a>
+          </div>
+      </div>
+
+
+  <div class="task-list" id="tasklist">
+
+      
+    
+    <div class="taskBox"> 
+          <h2>Add another task...</h2> 
+       
+          <br>
+    <form id="taskform">
+        <label for="task">Task:</label>
+        <input type="text" name="task" id="taskInput">
+
+        <br>
+  
+        <!----Date Input-->
+      <label for="dueDate">Due date:</label>
+      <input type="date" name="dueDate" id="dueDateInput">
+
+      <br>
+
+        <!---Deadline Input-->
+      <label for="taskDeadline">Task Deadline: </label>
+      <input type="time" name="taskDeadline" id="taskDeadlineInput">
+
+      <br>
+
+        <!---Completion Input-->
+
+        <label for="estimatedCompletionTime">Estimated Completion Time (mins): </label>
+       <input type="text" name="estimatedCompletionTime" id="estimatedCompletionTimeInput">
+
+       <br>
+
+       <!-----Priority Rating-->
+
+       <label name="priorityRating">Task Priority: </label>
+       <select name="priorityRating" id="priorityRatingInput">
+        <option value="selectOne">select one</option>
+           <option value="Low">Low</option>
+           <option value="Medium">Medium</option>
+           <option value="High">High</option>
+       </select>
+  
+       <br>
+        <button type="submit">Submit</button>
+      </form>
+
+      <div id="taskList">
+        <h1>Your tasks:</h1>
+        <p id="emptyList">You have not added any tasks.</p>
+        <ul></ul>
+      </div>
+    
+  </div>
+
+
+  <div class="active" id="timer">
+      <h1> Pomodoro Timer</h1>
+    <div class="stopwatch">
+        
+        </div>
+
+</div>
+
+<div class="kanban-board" id="kanban">
+    <h1>Kanban Board</h1>
+
+    <div class="grid-container">
+        <div class="important">
+
+        </div>
+        <div class="notImportant">
+
+        </div>
+        <div class="urgent">
+
+        </div>
+        <div class="notUrgent">
+
+        </div>
+        <div class="importantUrgent">
+
+        </div>
+        <div class="importantNotUrgent">
+
+        </div>
+        <div class="notImportantUrgent">
+
+        </div>
+        <div class="notImportantNotUrgent">
+
+        </div>
+      </div>
+    </div>
+
+<div class="music-library" id="music">
+ <h1>Music Library</h1>
+
+ <figure>
+    <figcaption>Listen to the T-Rex:</figcaption>
+    <audio controls="" src="/index.html">
+       
+    </audio>
+</figure>
+</div>
+
+<div class="dictionary" id="dictionary">
+ <h1>Dictionary</h1>
+</div>
+
+<script src="/index.HASH_REF_70dca43e1ee77af44d4d7940a915bf2e.js"></script>
+
+</div></div></html>
+
+
