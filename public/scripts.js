@@ -24,7 +24,7 @@ var dueDateInput = document.getElementById("dueDateInput");
 var taskDeadlineInput = document.getElementById("taskDeadlineInput");
 var estimatedCompletionTimeInput = document.getElementById("estimatedCompletionTimeInput");
 var priorityRatingInput = document.getElementById("priorityRatingInput");
-
+var urgencyInput = document.getElementById("urgencyInput");
 
 
 button.addEventListener("click", function(event){
@@ -34,9 +34,9 @@ button.addEventListener("click", function(event){
   let taskDeadline = taskDeadlineInput.value; 
   let estimatedCompletionTime = estimatedCompletionTimeInput.value;
   let priorityRating = priorityRatingInput.options[priorityRatingInput.selectedIndex].value;
-    
+  let urgency = urgencyInput.options[urgencyInput.selectedIndex].value;
 
-  addTask(task, dueDate, priorityRating, taskDeadline, estimatedCompletionTime, priorityRatingInput, false)
+  addTask(task, dueDate, priorityRating, taskDeadline, estimatedCompletionTime, priorityRatingInput, urgency)
   console.log(taskListArray);
   console.log(taskList);
 });
@@ -46,16 +46,16 @@ button.addEventListener("click", function(event){
 
 var taskListArray =[];
 
-function addTask(taskDescription, dueDate, priorityRating, taskDeadline, estimatedCompletionTime, completionStatus){
+function addTask(taskDescription, dueDate, priorityRating, taskDeadline, estimatedCompletionTime, urgency){
   let d = new Date();
   let dateCreated = d.getFullYear();
   let task = {
     taskDescription,
     dueDate,
-    priorityRating,
     taskDeadline,
     estimatedCompletionTime,
-    completionStatus
+    priorityRating,
+    urgency
   };
   taskListArray.push(task);
   renderTask(task);

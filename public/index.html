@@ -34,19 +34,19 @@
           <br>
     <form id="taskform">
         <label for="task">Task:</label>
-        <input type="text" name="task" id="taskInput">
+        <input type="text" name="task" id="taskInput" >
 
         <br>
   
         <!----Date Input-->
       <label for="dueDate">Due date:</label>
-      <input type="date" name="dueDate" id="dueDateInput">
+      <input type="date" name="dueDate" id="dueDateInput" >
 
       <br>
 
         <!---Deadline Input-->
       <label for="taskDeadline">Task Deadline: </label>
-      <input type="time" name="taskDeadline" id="taskDeadlineInput">
+      <input type="time" name="taskDeadline" id="taskDeadlineInput" >
 
       <br>
 
@@ -65,6 +65,16 @@
            <option value="Low">Low</option>
            <option value="High">High</option>
        </select>
+
+       <br>
+
+       <!-----Urgency-->
+       <label name ="urgency">Task Urgency:</label>
+       <select name="urgency" id = "urgencyInput">
+           <option value="selectOne">select one</option>
+           <option value="notUrgent">Not urgent</option>
+           <option value="urgent">Urgent</option>
+       </select>
   
        <br>
         <button type="submit">Submit</button>
@@ -75,6 +85,10 @@
         <p id="emptyList">You have not added any tasks.</p>
         <ul></ul>
       </div>
+
+      
+
+
     
   </div>
 
