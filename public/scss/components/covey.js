@@ -22,3 +22,27 @@ function coveyRenderTask(task){
     });
     
     }
+
+
+        switch(coveyRenderTask) {
+            case 1: priorityRating= 'low';
+                    urgency= 'notUrgent';
+                    
+            break;
+
+            case 2: priorityRating= 'high';
+                    urgency= 'notUrgent';
+            break;
+
+            case 3: priorityRating= 'low';
+                    urgency= 'Urgent';
+            break;
+
+            case 4: priorityRating= 'High';
+                    urgency= 'Urgent';
+            break;
+
+            default:
+
+        }
+
