@@ -2,11 +2,11 @@
     display: grid;
     grid-template-columns: 1fr, 1fr;
     grid-template-rows: 1fr;
-    grid-template-areas: "taskbox, taskList" ;
+    grid-template-areas: "taskform, taskList" ;
 }
 
-    #taskList{
-        grid-area: "taskbox";
+    #taskform{
+        grid-area: "taskform";
         max-width: 300px;
         margin: 0 auto;
         label{

@@ -510,6 +510,7 @@ function addTask(taskDescription, dueDate, priorityRating, taskDeadline, estimat
 
 function renderTask(task){
 
+updateEmpty();
 
 //create html elements 
 let item = document.createElement("li");
@@ -527,12 +528,22 @@ item.appendChild(delButton);
 delButton.addEventListener("click", function(event){
     event.preventDefault();
     item.remove();
+    updateEmpty();
 });
 
 // clear the input form
 form.reset();
 }
 
+
+function updateEmpty(){
+  if (taskListArray.length > 0){
+    document.getElementById('emptyList').style.display='none';
+ }else{
+    document.getElementById('emptyList').style.display='block';
+
+ } 
+}
 
 
 

@@ -1,18 +1,3 @@
-
-
-
-//NAVIGATION
-var menuItems = document.querySelectorAll('.nav .sidebar a');
-menuItems.forEach(function(item) {
-    item.addEventListener('click', function(event) {
-        menuItems.forEach(function(item) {
-            console.log(item);
-          item.classList.remove("active");
-        });
-        item.classList.add("active");
-    })
-})
-
 //TASKLIST
  
 const form = document.getElementById("taskform");
@@ -70,7 +55,11 @@ updateEmpty();
 
 //create html elements 
 let item = document.createElement("li");
-    item.innerHTML = "<p>" + task.taskDescription + "</p>";
+    item.innerHTML = "<p>" + task.taskDescription + task.DueDate + "</p>";
+
+    taskList.appendChild(item);
+
+    item.innerHTML = "<p>" + task.DueDate + "</p>"
 
     taskList.appendChild(item);
 
@@ -100,73 +89,3 @@ function updateEmpty(){
 
  } 
 }
-
-
-
-
-//RENDER A COVEY TASK
-
-function coveyRenderTask(task){
-
-
-  //create html elements 
-  let item = document.createElement("li");
-      item.innerHTML = "<p>" + task.taskDescription + "</p>";
-  
-      coveyTaskList.appendChild(item);
-  
-  //extra task DOM elements
-  let delButton = document.createElement("button");
-  let delButtonText = document.createTextNode("Delete Task");
-  delButton.appendChild(delButtonText);
-  item.appendChild(delButton);
-  
-  //event listeners for the DOM elements
-  delButton.addEventListener("click", function(event){
-      event.preventDefault();
-      item.remove();
-  });
-  
-  }
-
-
-
-
-//Covey Quadrants
-
-// var importantUrgent =[];
-
-// function addTaskToCovey(taskDescription){
-//   let d = new Date();
-//   let dateCreated = d.getFullYear();
-//   let task = {
-//     taskDescription
-//   };
-//  importantUrgent.push(task);
-//   renderTask(task);
-
-//   //create html elements 
-// let item = document.createElement("li");
-// item.innerHTML = "<p>" + task.taskDescription + "</p>";
-
-// importantUrgent.appendChild(item);
-
-
-// }
-
-
-// var notImportantUrgent =[];
-// var importantNotUrgent =[];
-// var notImportantNotUrgent =[];
-
-
-  
-
-
-
-
-//TIMER
-var TIME_LIMIT;
-let timePast;
-let timeLeft;
-let timeInterval;
