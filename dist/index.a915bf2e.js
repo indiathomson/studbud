@@ -140,9 +140,9 @@
       this[globalName] = mainExports;
     }
   }
-})({"7hnQ3":[function(require,module,exports) {
+})({"4de8m":[function(require,module,exports) {
 var HMR_HOST = null;
-var HMR_PORT = 56269;
+var HMR_PORT = 1234;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d751713988987e9331980363e24189ce";
 module.bundle.HMR_BUNDLE_ID = "70dca43e1ee77af44d4d7940a915bf2e";
@@ -462,6 +462,7 @@ menuItems.forEach(function(item) {
 const form = document.getElementById("taskform");
 const button = document.querySelector("#taskform > button");
 var taskList = document.getElementById("taskList");
+var coveyTaskList = document.getElementById("coveyTaskList");
 var taskInput = document.getElementById("taskInput");
 var dueDateInput = document.getElementById("dueDateInput");
 var taskDeadlineInput = document.getElementById("taskDeadlineInput");
@@ -480,6 +481,7 @@ button.addEventListener("click", function(event){
     
 
   addTask(task, dueDate, priorityRating, taskDeadline, estimatedCompletionTime, priorityRatingInput, false)
+  console.log(taskListArray);
   console.log(taskList);
 });
 
@@ -501,6 +503,7 @@ function addTask(taskDescription, dueDate, priorityRating, taskDeadline, estimat
   };
   taskListArray.push(task);
   renderTask(task);
+  coveyRenderTask(task);
   
 }
 
@@ -511,7 +514,6 @@ function renderTask(task){
 //create html elements 
 let item = document.createElement("li");
     item.innerHTML = "<p>" + task.taskDescription + "</p>";
-    item.innerHTML = "<p>" + task.dueDate + "</p>";
 
     taskList.appendChild(item);
 
@@ -534,35 +536,61 @@ form.reset();
 
 
 
-//Covey Quadrants
-button.addEventListener("click", function(addtoCoveyQuadrant){
-  let task = taskInput.value;
-});
 
-var importantUrgent =[];
+//RENDER A COVEY TASK
 
-function addTaskToCovey(taskDescription){
-  let d = new Date();
-  let dateCreated = d.getFullYear();
-  let task = {
-    taskDescription
-  };
- importantUrgent.push(task);
-  renderTask(task);
+function coveyRenderTask(task){
+
 
   //create html elements 
-let item = document.createElement("li");
-item.innerHTML = "<p>" + task.taskDescription + "</p>";
+  let item = document.createElement("li");
+      item.innerHTML = "<p>" + task.taskDescription + "</p>";
+  
+      coveyTaskList.appendChild(item);
+  
+  //extra task DOM elements
+  let delButton = document.createElement("button");
+  let delButtonText = document.createTextNode("Delete Task");
+  delButton.appendChild(delButtonText);
+  item.appendChild(delButton);
+  
+  //event listeners for the DOM elements
+  delButton.addEventListener("click", function(event){
+      event.preventDefault();
+      item.remove();
+  });
+  
+  }
 
-importantUrgent.appendChild(item);
 
 
-}
+
+//Covey Quadrants
+
+// var importantUrgent =[];
+
+// function addTaskToCovey(taskDescription){
+//   let d = new Date();
+//   let dateCreated = d.getFullYear();
+//   let task = {
+//     taskDescription
+//   };
+//  importantUrgent.push(task);
+//   renderTask(task);
+
+//   //create html elements 
+// let item = document.createElement("li");
+// item.innerHTML = "<p>" + task.taskDescription + "</p>";
+
+// importantUrgent.appendChild(item);
 
 
-var notImportantUrgent =[];
-var importantNotUrgent =[];
-var notImportantNotUrgent =[];
+// }
+
+
+// var notImportantUrgent =[];
+// var importantNotUrgent =[];
+// var notImportantNotUrgent =[];
 
 
   
@@ -575,6 +603,6 @@ var TIME_LIMIT;
 let timePast;
 let timeLeft;
 let timeInterval;
-},{}]},["7hnQ3","4B4Nd"], "4B4Nd", "parcelRequirec526")
+},{}]},["4de8m","4B4Nd"], "4B4Nd", "parcelRequirec526")
 
 //# sourceMappingURL=index.a915bf2e.js.map

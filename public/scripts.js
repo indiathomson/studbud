@@ -89,7 +89,11 @@ delButton.addEventListener("click", function(event){
 form.reset();
 }
 
-//redner a covery task
+
+
+
+
+//RENDER A COVEY TASK
 
 function coveyRenderTask(task){
 
