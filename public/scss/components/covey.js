@@ -52,7 +52,15 @@
                 item.innerHTML = "<p>" + task.taskDescription + "</p>";
             
                 coveyTaskListIU.appendChild(item);
+       
             }
 
         }
     
+
+
+
+      //  var list = document.createElement("li");
+       
+       // var taskElement = document.getElementById("taskDescription");
+        list.appendChild(taskElement);

@@ -9,7 +9,7 @@ var dueDateInput = document.getElementById("dueDateInput");
 var taskDeadlineInput = document.getElementById("taskDeadlineInput");
 var estimatedCompletionTimeInput = document.getElementById("estimatedCompletionTimeInput");
 var priorityRatingInput = document.getElementById("priorityRatingInput");
-var urgencyInput = document.getElementById("urgencyInput");
+var urgencyInput = document.getElementById("urgencyInput")
 
 
 button.addEventListener("click", function(event){
@@ -31,11 +31,10 @@ button.addEventListener("click", function(event){
 
 var taskListArray =[];
 
-function addTask(taskDescription, dueDate, priorityRating, taskDeadline, estimatedCompletionTime, urgency){
-  let d = new Date();
-  let dateCreated = d.getFullYear();
+function addTask(task, dueDate, priorityRating, taskDeadline, estimatedCompletionTime, urgency){
+
   let task = {
-    taskDescription,
+    task,
     dueDate,
     taskDeadline,
     estimatedCompletionTime,
@@ -44,8 +43,8 @@ function addTask(taskDescription, dueDate, priorityRating, taskDeadline, estimat
   };
   taskListArray.push(task);
   renderTask(task);
-  coveyRenderTask(task);
-  
+  coveyQuadrant(task);
+  console.log(task);
 }
 
 
@@ -55,7 +54,7 @@ updateEmpty();
 
 //create html elements 
 let item = document.createElement("li");
-    item.innerHTML = "<p>" + task.taskDescription + task.DueDate + "</p>";
+    item.innerHTML = "<p>" + task.task + task.DueDate + "</p>";
 
     taskList.appendChild(item);
 

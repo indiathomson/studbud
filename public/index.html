@@ -85,7 +85,7 @@
                             <div id="taskList">
                                 <h1>Your tasks:</h1>
                                 <p id="emptyList">You have not added any tasks.</p>
-                                <ul></ul>
+                                <ul class="inarow"></ul>
                             </div>
 
                         </div>
@@ -108,6 +108,8 @@
             <h1>Covey Quadrants</h1>
 
             <div class="grid-container-covey-quadrents">
+
+                 <!----Covey Quadrant Title Areas-->
                 <div class="important">
                     <h3 class = "transformh3">Important:</h3>
 
@@ -123,6 +125,8 @@
                     <h3 >Not Urgent:</h3>
 
                 </div>
+
+                <!----Covey Quadrant Divs to Append Task List Name-->
                 <div class="importantUrgent">
 
                     <div id="coveyTaskListIU">
@@ -172,10 +176,12 @@
 
         <div class="dictionary" id="dictionary">
             <h1>Dictionary</h1>
+            <p>Use this search bar to access the Oxford Dictionary database.</p>
 
             <form>
-                <label name = "dictionarySearch">Search words:lo</label>
-                <input type="text" name="word"id="word_id">
+                <label name = "dictionarySearch">Search words:</label>
+                <input type="text" name="word"id="defenition">
+                <button type ="submit">Search</button>
 
             </form>
 
