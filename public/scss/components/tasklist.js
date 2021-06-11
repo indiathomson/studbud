@@ -54,7 +54,7 @@ updateEmpty();
 
 //create html elements 
 let item = document.createElement("li");
-    item.innerHTML = "<p>" + task.task + task.DueDate + "</p>";
+    item.innerHTML = "<p>" + task + "</p>";
 
     taskList.appendChild(item);
 

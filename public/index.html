@@ -176,24 +176,28 @@
 
         <div class="dictionary" id="dictionary">
             <h1>Dictionary</h1>
-            <p>Use this search bar to access the Oxford Dictionary database.</p>
+            
+                <input type="text" name='word_ID'id="wordInput">
+                <button type='submit'id ="dictionarySearch" >Search:</button>
 
-            <form>
-                <label name = "dictionarySearch">Search words:</label>
-                <input type="text" name="word"id="defenition">
-                <button type ="submit">Search</button>
 
-            </form>
+                <div id="dictionaryMeaning">
+
+                
+
+                </div>
+
+            <div id="dictionaryResults">
+                <h3>Dictionary Meaning:</h3>
+
+            </div>
 
         </div>
 
     </div>
 
-        <script src="scripts.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" 
-            integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" 
-            crossorigin="anonymous">
-        </script>
+        <script src="scripts.js"> 
+        </script> 
 </body>
 </html>
 
