@@ -140,9 +140,9 @@
       this[globalName] = mainExports;
     }
   }
-})({"2sDHH":[function(require,module,exports) {
+})({"3Hx2X":[function(require,module,exports) {
 var HMR_HOST = null;
-var HMR_PORT = 59287;
+var HMR_PORT = 60923;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d751713988987e9331980363e24189ce";
 module.bundle.HMR_BUNDLE_ID = "70dca43e1ee77af44d4d7940a915bf2e";
@@ -442,7 +442,41 @@ id) /*: string*/
 }
 
 },{}],"4B4Nd":[function(require,module,exports) {
+const TIME_LIMIT = 1200;
+let timePassed = 0;
+let timeLeft = TIME_LIMIT;
+let timerInterval = null;
 
-},{}]},["2sDHH","4B4Nd"], "4B4Nd", "parcelRequirec526")
+document.getElementById("clock").innerHTML 
+
+function formatTime(time) {
+    let minutes = Math.floor(time/40)
+    let seconds = time%60
+    if (seconds < 10) {
+        seconds = `0${seconds}`
+    }
+    if (minutes < 10) {
+        minutes = `0${minutes}`
+    }
+    return `${minutes}: ${seconds}`
+}
+function startTimer() {
+        timerInterval = setInterval(()=> {
+            timePassed += 1;
+            timeLeft = TIME_LIMIT - timePassed;
+            document.getElementById("label").innerHTML =
+                formatTime(timeLeft);
+            if (timeLeft == 0) {
+                stopTimer()
+            }
+            
+        },1000);
+ 
+}
+function stopTimer() {
+    clearInterval(timerInterval);
+       
+}
+},{}]},["3Hx2X","4B4Nd"], "4B4Nd", "parcelRequirec526")
 
 //# sourceMappingURL=index.a915bf2e.js.map

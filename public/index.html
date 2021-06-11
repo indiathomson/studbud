@@ -90,17 +90,24 @@
 
                         </div>
 
-
                 
                     </div>
                 </div>
 
 
-                <div class="active" id="timer">
-                    <h1> Pomodoro Timer</h1>
-                    <div class = "stopwatch">
-                
-                </div>
+                <div class="active" id="timer1">
+                    <h1> Timer</h1>
+                    <div id="clock">
+                        
+                        <div>
+                            <div id="label">
+                            </div>
+                            <button onclick= startTimer() type = "button" >Start</button>
+                            <button onclick= stopTimer()  type= "button" >Pause</button>
+                        </div>
+                        
+
+                    </div>
 
                  </div>
 
@@ -165,13 +172,14 @@
         <div class="music-library" id="music">
         <h1>Music Library</h1>
 
-            <iframe src="https://open.spotify.com/embed/playlist/0vvXsWCC9xrXsKd4FyS8kM" 
-                width="300" 
-                height="380" 
-                frameborder="0" 
-                allowtransparency="true" 
-                allow="encrypted-media">
-            </iframe>
+        <iframe 
+        width="60%" 
+        height="80%" 
+        src="https://www.youtube.com/embed/5qap5aO4i9A" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
         </div>
 
         <div class="dictionary" id="dictionary">

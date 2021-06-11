@@ -31,10 +31,10 @@ button.addEventListener("click", function(event){
 
 var taskListArray =[];
 
-function addTask(task, dueDate, priorityRating, taskDeadline, estimatedCompletionTime, urgency){
+function addTask(taskDescription, dueDate, priorityRating, taskDeadline, estimatedCompletionTime, urgency){
 
   let task = {
-    task,
+    taskDescription,
     dueDate,
     taskDeadline,
     estimatedCompletionTime,
@@ -54,11 +54,7 @@ updateEmpty();
 
 //create html elements 
 let item = document.createElement("li");
-    item.innerHTML = "<p>" + task + "</p>";
-
-    taskList.appendChild(item);
-
-    item.innerHTML = "<p>" + task.DueDate + "</p>"
+    item.innerHTML = "<p>" + task.taskDescription + "</p>";
 
     taskList.appendChild(item);
 
